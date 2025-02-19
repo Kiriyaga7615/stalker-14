@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMobMutant
+  parent: STBaseMobMutant
   id: MobMutantBlindDog
   name: слепой пёс
   suffix: ST, T1
@@ -62,8 +62,8 @@
         types:
           Slash: 16
     - type: MovementSpeedModifier
-      baseWalkSpeed: 2.5
-      baseSprintSpeed: 5
+      baseWalkSpeed: 2
+      baseSprintSpeed: 4
     - type: Sprite
       sprite: /Textures/_Stalker/Mobs/Mutants/blinddog.rsi
       layers:

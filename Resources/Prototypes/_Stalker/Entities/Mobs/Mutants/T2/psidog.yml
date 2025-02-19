@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMobMutant
+  parent: STBaseMobMutant
   id: MutantPsidog
   name: пси-пёс
   suffix: ST, T2
@@ -9,7 +9,7 @@
       damageModifierSet: STMutantT2DamageModifierSet
     - type: HTN
       rootTask:
-        task: STBlindDogCompound
+        task: STPsidogCompound
       blackboard:
         VisionRadius: !type:Single
           15.0
@@ -37,8 +37,8 @@
       speedModifierThresholds:
         200: 0.8
     - type: MovementSpeedModifier
-      baseWalkSpeed : 3.12
-      baseSprintSpeed : 6
+      baseWalkSpeed : 2
+      baseSprintSpeed : 4
     - type: MeleeWeapon
       attackRate: 0.7
       heavyWindupModifier: 1
@@ -90,9 +90,9 @@
       maximumEntitiesSpawned: 2
 
 - type: entity
-  parent: BaseMobMutant
+  parent: STBaseMobMutant
   id: MutantPsidogCopy
-  name: псевдопёс
+  name: пси-пёс
   description: Мутировавший волк, обладающий существенными пси-способностями и способный создавать иллюзии. Редкая и очень опасная тварь.
   suffix: Stalker, Мутант, Копия
   components:
@@ -103,7 +103,7 @@
         VisionRadius: !type:Single
           15.0
     - type: TimedDespawn
-      lifetime: 10
+      lifetime: 14
     - type: STWeight
       self: 55
     - type: Sprite
@@ -145,7 +145,7 @@
       wideAnimation: WeaponArcClaw
       damage:
         types:
-          Slash: 6
+          Slash: 8
     - type: Damageable
       damageModifierSet: CloneMutant
     - type: Destructible

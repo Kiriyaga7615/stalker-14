@@ -56,10 +56,10 @@
       wideAnimation: WeaponArcClaw
       damage:
         types:
-          Slash: 36
+          Slash: 32
     - type: MovementSpeedModifier
-      baseWalkSpeed: 3.12
-      baseSprintSpeed: 6
+      baseWalkSpeed: 2.5
+      baseSprintSpeed: 5
     - type: Sprite
       sprite: /Textures/_Stalker/Mobs/Mutants/pseudodog.rsi
       layers:
